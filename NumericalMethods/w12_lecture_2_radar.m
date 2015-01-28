@@ -27,5 +27,54 @@ filter = exp(-0.2*(k).^2);
 unft = filter .* utn;
 unf = ifft(unft);
 
+figure(2), subplot(3,1,1), plot(t, abs(un), 'k'); hold on;
+figure(2), subplot(3,1,2), plot(t, abs(unf), 'k'); hold on;
+
+% filter at other frequency position 
+filter = exp(-0.2*(k+10).^2);
+unft = filter .* utn;
+unf = ifft(unft);
+figure(2), subplot(3,1,3), plot(t, abs(unf), 'k');hold on;
+
+% shaper filter
+filter = exp(-0.1*(k).^2);
+unft = filter .* utn;
+unf = ifft(unft);
+
+figure(3), subplot(3,1,1), plot(t, abs(un), 'k'); hold on;
+figure(2), subplot(3,1,2), plot(t, abs(unf), 'r'); hold on;
+
+% filter at other frequency position 
+filter = exp(-0.1*(k+10).^2);
+unft = filter .* utn;
+unf = ifft(unft);
+figure(2), subplot(3,1,3), plot(t, abs(unf), 'r'); hold on;
+
+% even shaper filter
+filter = exp(-0.01*(k).^2);
+unft = filter .* utn;
+unf = ifft(unft);
+
+figure(2), subplot(3,1,2), plot(t, abs(unf), 'g'); hold on;
+
+% filter at other frequency position 
+filter = exp(-0.01*(k+10).^2);
+unft = filter .* utn;
+unf = ifft(unft);
+figure(2), subplot(3,1,3), plot(t, abs(unf), 'g'); hold on;
+
+% change filter shape
+filter = sech(-0.01*(k).^2);
+unft = filter .* utn;
+unf = ifft(unft);
+
+figure(2), subplot(3,1,2), plot(t, abs(unf), 'b'); hold on;
+
+% filter at other frequency position 
+filter = exp(-0.1*(k+10).^2);
+unft = filter .* utn;
+unf = ifft(unft);
+figure(2), subplot(3,1,3), plot(t, abs(unf), 'b'); hold on;
+
 
 end
