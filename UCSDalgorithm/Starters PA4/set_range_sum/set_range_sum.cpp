@@ -127,6 +127,8 @@ void split(Vertex* root, int key, Vertex*& left, Vertex*& right) {
     left = root;
     return;
   }
+  splay(root, right);
+
   left = right->left;
   right->left = NULL;
   if (left != NULL) {
@@ -162,7 +164,7 @@ void insert(int x) {
     new_vertex = new Vertex(x, x, NULL, NULL, NULL);
   }
   root = merge(merge(left, new_vertex), right);
-  cout << "+ " << root->sum << endl;
+  //cout << "+ " << root->sum << endl;
 }
 
 
@@ -189,15 +191,22 @@ long long sum(int from, int to) {
   Vertex* left = NULL;
   Vertex* middle = NULL;
   Vertex* right = NULL;
+  if (root==NULL)
+    return 0;
   split(root, from, left, middle);
   if (middle == NULL && left == NULL)
     return 0;
+  if (middle == NULL)
+  {
+    root = left;
+    return 0;
+  }
   split(middle, to + 1, middle, right);
   long long ans = 0;
   // Complete the implementation of sum
   if (middle)
     ans = middle->sum;
-  cout <<  " m = " <<  middle->sum << endl;
+//  cout <<  " m = " <<  ans << endl;
 
   root = merge(merge(left, middle), right);
   return ans;  
@@ -205,7 +214,13 @@ long long sum(int from, int to) {
 
 
 int test(int n){
+  cout << "n = " << n << endl;
   vector<long long> value;
+  if (root != NULL)
+  {
+    delete root;
+    root = NULL;
+  }
   int last_sum_result = 0;
   for (int i = 0; i <= n; i++) {
     int choice = rand()%4;
@@ -232,10 +247,10 @@ int test(int n){
         vector<long long>::iterator itr;
         itr = std::find(value.begin(), value.end(), (x + last_sum_result) % MODULO);
         if (bf && itr == value.end())
-          printf("error in found");
+          throw("error in found");
         if (!bf && itr != value.end())
         {
-          printf("error in found"); 
+          throw("error in found"); 
         }
         if (itr != value.end())
           printf("Found\n");
@@ -252,21 +267,35 @@ int test(int n){
           l = r;
           r = t;
         }
-        long long res = sum((l + last_sum_result) % MODULO, (r + last_sum_result) % MODULO);
+        long long lft = (l + last_sum_result) % MODULO;
+        long long rgt = (r + last_sum_result) % MODULO;
+        if (lft > rgt)
+        {
+          long long t = rgt;
+          rgt = lft;
+          lft = t;
+        }
+        long long res = sum(lft, rgt);
         printf("%lld\n", res);
         last_sum_result = int(res % MODULO);
 
         vector<long long>::iterator itr;
-        long long this_res;
+        long long this_res = 0;
         for (auto& p : value)
         {
-          if (p >= (l + last_sum_result)%MODULO && p <= (r+last_sum_result)%MODULO)
-              this_res += p;
+          long long v = p % MODULO;
+          if (v >= lft && v <= rgt)
+              this_res += v;
         }
         this_res = this_res % MODULO;
         printf("%lld\n", this_res);
         if (last_sum_result != this_res)
-          printf("error");
+        {
+          for (auto& p: value)
+            cout << p << " ";
+          cout << endl;
+          throw("error \n");
+        }
 
       }
     }
@@ -276,8 +305,8 @@ int test(int n){
 
 int main(){
 
-  for (int n = 0; n < 100000; n++)
-    test(n);
+//  for (int n = 0; n < 100000; n++)
+//    test(n);
 
   int n;
   scanf("%d", &n);
