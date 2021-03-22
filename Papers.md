@@ -2,6 +2,8 @@
 
 This file contains papers that are interesting. 
 
+## Pretrain
+1. New pretrain idea that uses generation tasks for pretraining (https://arxiv.org/pdf/2103.10360.pdf)
 
 ## Logics and Entailment
 
