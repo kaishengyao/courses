@@ -9,6 +9,15 @@ This file contains papers that are interesting.
 
 The idea of PossibleWorldNet incorporates sampled words and use them to evaluate an entailment. The score is then used as feature or directly used for prediction entailment. Adding possible words is a strong *grounding" process, as that can encode human knowledge into it. 
 
+## Sequence Labeling
+1. Tagging via Masked CRF https://arxiv.org/pdf/2103.10682.pdf
+This paper seems solve the illegal tagging problem in a fundamental yet simple way. It masks the illegal paths with a large negative score in both training and inference. 
+
+## Continual Learning
+### Study on Multi-modal models
+1. This paper proposes a new dataset for the study of the continual learning on multi-modal systems. (https://arxiv.org/pdf/2005.00785.pdf)
+
+
 ## Overview paper for conversational agent 
 
 1. https://arxiv.org/pdf/1803.08419.pdf
