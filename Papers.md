@@ -14,3 +14,8 @@ The idea of PossibleWorldNet incorporates sampled words and use them to evaluate
 1. https://arxiv.org/pdf/1803.08419.pdf
 
 This is a summary of the up-to-date work on conversational agent. I especially like the discussion of incorporating knowledge into conversational agent, aka. grounding. One method is using a ngram from query to link common sense knoweledge, from which a neural network model generates responses informatively. 
+
+## Edge Device
+
+1. Text classification and sentence-level classification model on server-less. However, the model is still too large with 200M byte. ( https://arxiv.org/pdf/2103.10673.pdf)
+
