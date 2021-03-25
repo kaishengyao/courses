@@ -19,6 +19,9 @@ This paper seems solve the illegal tagging problem in a fundamental yet simple w
 ### Study on Multi-modal models
 1. This paper proposes a new dataset for the study of the continual learning on multi-modal systems. (https://arxiv.org/pdf/2005.00785.pdf)
 
+## Image&Text Grammar Induction
+1. https://arxiv.org/pdf/2103.12975.pdf
+This paper is interesting. It provides a dataset that has an alignment between image parts and text grammar. Both grammars use PCFG. However, the positional information is lost in the image grammar. 
 
 ## Overview paper for conversational agent 
 
