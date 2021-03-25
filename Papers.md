@@ -23,6 +23,10 @@ This paper seems solve the illegal tagging problem in a fundamental yet simple w
 1. https://arxiv.org/pdf/2103.12975.pdf
 This paper is interesting. It provides a dataset that has an alignment between image parts and text grammar. Both grammars use PCFG. However, the positional information is lost in the image grammar. 
 
+## Multimodal Disinformation Detection
+1. https://arxiv.org/pdf/2103.12541.pdf
+This paper is related to extract disinformation from many sources. Hoewver, it points out that interpretibility, common-sense reasoning as important prior knoweldge to use. It cannot just rely on the content signals. 
+
 ## Overview paper for conversational agent 
 
 1. https://arxiv.org/pdf/1803.08419.pdf
