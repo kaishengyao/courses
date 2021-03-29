@@ -2,6 +2,14 @@
 
 This file contains papers that are interesting. 
 
+## Interpretation
+1. https://arxiv.org/pdf/2103.12279.pdf 
+This paper introduces Local Interpretation Layer (LIL) and Global Interpretation Layer (GIL). LIL uses influence method to measure influence from particular non-terminal node of the parsed tree representation of the sentence. GIL uses sentence representation to retrieval the most relevant knowledge/phrase/sampels in training set. LIL and GIL help model performances without sacrificying interpretation capability.
+
+2. https://arxiv.org/pdf/1806.07538.pdf 
+Interpretation on CV tasks.
+
+
 ## Pretrain
 1. New pretrain idea that uses generation tasks for pretraining (https://arxiv.org/pdf/2103.10360.pdf)
 
