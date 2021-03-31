@@ -9,6 +9,12 @@ This paper introduces Local Interpretation Layer (LIL) and Global Interpretation
 2. https://arxiv.org/pdf/1806.07538.pdf 
 Interpretation on CV tasks.
 
+3. Ues generalized additive model 
+(https://www.cs.cornell.edu/~yinlou/papers/lou-kdd12.pdf?spm=ata.21736010.0.0.12c05f3021OdTc&file=lou-kdd12.pdf)
+(https://www.cs.cornell.edu/~yinlou/papers/lou-kdd13.pdf?spm=ata.21736010.0.0.12c05f3021OdTc&file=lou-kdd13.pdf)
+
+4. Transformer interpretability 
+https://arxiv.org/pdf/2012.09838.pdf This is a good paper to read for its coverage of existing approaches and its proposal. 
 
 ## Pretrain
 1. New pretrain idea that uses generation tasks for pretraining (https://arxiv.org/pdf/2103.10360.pdf)
