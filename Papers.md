@@ -7,7 +7,8 @@ This file contains papers that are interesting.
 This paper introduces Local Interpretation Layer (LIL) and Global Interpretation Layer (GIL). LIL uses influence method to measure influence from particular non-terminal node of the parsed tree representation of the sentence. GIL uses sentence representation to retrieval the most relevant knowledge/phrase/sampels in training set. LIL and GIL help model performances without sacrificying interpretation capability.
 
 2. https://arxiv.org/pdf/1806.07538.pdf 
-Interpretation on CV tasks.
+This lays out a general design framework where interpretation can be achieved during model training with regularization that has interpretation concepts. 
+This is a *must* read paper. It is tested on simple image classification tasks. The concept can be applied on more complicated tasks such as natual language processing. 
 
 3. Ues generalized additive model 
 (https://www.cs.cornell.edu/~yinlou/papers/lou-kdd12.pdf?spm=ata.21736010.0.0.12c05f3021OdTc&file=lou-kdd12.pdf)
@@ -15,6 +16,7 @@ Interpretation on CV tasks.
 
 4. Transformer interpretability 
 https://arxiv.org/pdf/2012.09838.pdf This is a good paper to read for its coverage of existing approaches and its proposal. 
+
 
 ## Pretrain
 1. New pretrain idea that uses generation tasks for pretraining (https://arxiv.org/pdf/2103.10360.pdf)
