@@ -4,7 +4,7 @@ This file contains papers that are interesting.
 
 ## Interpretation
 1. https://arxiv.org/pdf/2103.12279.pdf 
-This paper introduces Local Interpretation Layer (LIL) and Global Interpretation Layer (GIL). LIL uses influence method to measure influence from particular non-terminal node of the parsed tree representation of the sentence. GIL uses sentence representation to retrieval the most relevant knowledge/phrase/sampels in training set. LIL and GIL help model performances without sacrificying interpretation capability.
+*Excellent paper* This paper introduces Local Interpretation Layer (LIL) and Global Interpretation Layer (GIL). LIL uses influence method to measure influence from particular non-terminal node of the parsed tree representation of the sentence. GIL uses sentence representation to retrieval the most relevant knowledge/phrase/sampels in training set. LIL and GIL help model performances without sacrificying interpretation capability.
 
 2. https://arxiv.org/pdf/1806.07538.pdf 
 This lays out a general design framework where interpretation can be achieved during model training with regularization that has interpretation concepts. 
