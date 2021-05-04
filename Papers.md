@@ -21,6 +21,16 @@ https://arxiv.org/pdf/2012.09838.pdf This is a good paper to read for its covera
 ## Pretrain
 1. New pretrain idea that uses generation tasks for pretraining (https://arxiv.org/pdf/2103.10360.pdf)
 
+## Entity Linking and Disabmbiguation
+1. This paper proposes a seq-to-seq method to do entity linking, with entities stored as prefix-tree (trie). 
+Given the trie, it uses constrained beam-search, which is beam search constrained on the trie. (https://openreview.net/pdf?id=5k8F6UU39V)
+
+## Image Classification using Large Entropy High Dimentional Label
+1. (https://openreview.net/pdf?id=MyHwDabUHZm) This idea is to use another modality, such as speech, as the label to the input image. This forces the model to learn a mapping from the original modality of image, to the other modalities. The learned model is observed to be more robust than the model trained with prediction of categorical label distribution. 
+
+![Screen Shot 2021-05-04 at 2 12 29 PM](https://user-images.githubusercontent.com/3145135/117070564-c4d7de80-ace2-11eb-9424-974bfde17028.png)
+
+
 ## Logics and Entailment
 
 1. https://arxiv.org/pdf/1802.08535.pdf
