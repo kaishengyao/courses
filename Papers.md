@@ -17,6 +17,12 @@ This is a *must* read paper. It is tested on simple image classification tasks. 
 4. Transformer interpretability 
 https://arxiv.org/pdf/2012.09838.pdf This is a good paper to read for its coverage of existing approaches and its proposal. 
 
+5. Explainable Robots
+https://arxiv.org/pdf/2105.02658.pdf This is a survey paper on explainable robots. I haven't yet read it thouroughly.
+
+6. Explainable machine learning for medicine
+https://arxiv.org/pdf/2105.02357.pdf haven't yet read it. 
+
 
 ## Pretrain
 1. New pretrain idea that uses generation tasks for pretraining (https://arxiv.org/pdf/2103.10360.pdf)
