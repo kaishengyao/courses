@@ -23,6 +23,8 @@ https://arxiv.org/pdf/2105.02658.pdf This is a survey paper on explainable robot
 6. Explainable machine learning for medicine
 https://arxiv.org/pdf/2105.02357.pdf haven't yet read it. 
 
+7. Debiasing https://assets.amazon.science/2a/60/aff3520f4d52bb195f4a674ae413/debiasing-concept-based-explanations-with-causal-analysis.pdf
+
 
 ## Pretrain
 1. New pretrain idea that uses generation tasks for pretraining (https://arxiv.org/pdf/2103.10360.pdf)
