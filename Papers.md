@@ -64,6 +64,14 @@ This paper is interesting. It provides a dataset that has an alignment between i
 1. https://arxiv.org/pdf/2103.12541.pdf
 This paper is related to extract disinformation from many sources. Hoewver, it points out that interpretibility, common-sense reasoning as important prior knoweldge to use. It cannot just rely on the content signals. 
 
+## Tree-structure Models
+1. Recursive Transformer with CKY-style computing. Title: R2D2: Recursive Transformer based on Differentiable Treesfor Interpretable Hierarchical Language Modeling, ACL-2021. 
+
+This paper proposed a tree-structure model. 
+![Screen Shot 2021-05-14 at 11 25 37 AM](https://user-images.githubusercontent.com/3145135/118313056-1e8c9580-b4a7-11eb-8d58-3ce4f4d44c34.png)
+
+To reduce computational costs from O(N^3), it proposes a pruning method with cost of O(N). Also it proposes a pre-training task to predict a word given left- and right-context with tree-structure induction.
+
 ## Overview paper for conversational agent 
 
 1. https://arxiv.org/pdf/1803.08419.pdf
