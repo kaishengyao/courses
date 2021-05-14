@@ -25,6 +25,9 @@ https://arxiv.org/pdf/2105.02357.pdf haven't yet read it.
 
 7. Debiasing https://assets.amazon.science/2a/60/aff3520f4d52bb195f4a674ae413/debiasing-concept-based-explanations-with-causal-analysis.pdf
 
+8. Piece Linear Neural Network (https://arxiv.org/pdf/1802.06259.pdf)
+This method uses a softmax on top of many layers of linear network transformation of inputs. It claims to be exact and better than LIME. However, it best is considered to be linear classification network. LIME is for post-hoc explaination, and this PLNN is not. Also, the feature has been mixed up during PLNN forward computation. So I don't think this method will be inspiring.
+
 
 ## Pretrain
 1. New pretrain idea that uses generation tasks for pretraining (https://arxiv.org/pdf/2103.10360.pdf)
