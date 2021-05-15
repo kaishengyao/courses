@@ -28,6 +28,9 @@ https://arxiv.org/pdf/2105.02357.pdf haven't yet read it.
 8. Piece Linear Neural Network (https://arxiv.org/pdf/1802.06259.pdf)
 This method uses a softmax on top of many layers of linear network transformation of inputs. It claims to be exact and better than LIME. However, it best is considered to be linear classification network. LIME is for post-hoc explaination, and this PLNN is not. Also, the feature has been mixed up during PLNN forward computation. So I don't think this method will be inspiring.
 
+9. Interpretable model for ranking from [Google](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/5645c5bd211611898c776e21e83a7f2c0c381c85.pdf). 
+
+The method is solid. It is an intrisically interpretable model. The final model consists of individual neural networks for each feature of an item, and the final output is summation of scores from each of the feature as ![formula](https://render.githubusercontent.com/render/math?math=\hat{y} = \sum_j f_j(x_j))
 
 ## Pretrain
 1. New pretrain idea that uses generation tasks for pretraining (https://arxiv.org/pdf/2103.10360.pdf)
@@ -85,4 +88,12 @@ This paper uses noisy-channel model, so that each component can be seperately pr
 ## Edge Device
 
 1. Text classification and sentence-level classification model on server-less. However, the model is still too large with 200M byte. ( https://arxiv.org/pdf/2103.10673.pdf)
+
+
+## Dataset
+
+1. GLUE dataset
+
+https://gluebenchmark.com/tasks
+
 
