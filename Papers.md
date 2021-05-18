@@ -3,8 +3,8 @@
 This file contains papers that are interesting. 
 
 ## Interpretation
-1. [Neural Additive Machine] (https://arxiv.org/pdf/2004.13912.pdf) uses deep neural network to extract prediction on each feature, and the prediction is the sum of each prediction. It has a unique activation function. 
-2. [Local Interpretation and Global Interpretation] (https://arxiv.org/pdf/2103.12279.pdf) This paper introduces Local Interpretation Layer (LIL) and Global Interpretation Layer (GIL). LIL uses influence method to measure influence from particular non-terminal node of the parsed tree representation of the sentence. GIL uses sentence representation to retrieval the most relevant knowledge/phrase/sampels in training set. LIL and GIL help model performances without sacrificying interpretation capability. I implemented but found the results are not good.
+1. [Neural Additive Machine](https://arxiv.org/pdf/2004.13912.pdf) uses deep neural network to extract prediction on each feature, and the prediction is the sum of each prediction. It has a unique activation function. 
+2. [Local Interpretation and Global Interpretation](https://arxiv.org/pdf/2103.12279.pdf) This paper introduces Local Interpretation Layer (LIL) and Global Interpretation Layer (GIL). LIL uses influence method to measure influence from particular non-terminal node of the parsed tree representation of the sentence. GIL uses sentence representation to retrieval the most relevant knowledge/phrase/sampels in training set. LIL and GIL help model performances without sacrificying interpretation capability. I implemented but found the results are not good.
 3. https://arxiv.org/pdf/1806.07538.pdf This lays out a general design framework where interpretation can be achieved during model training with regularization that has interpretation concepts. This is a *must* read paper. It is tested on simple image classification tasks. The concept can be applied on more complicated tasks such as natual language processing. 
 4. Ues generalized additive model 
 (https://www.cs.cornell.edu/~yinlou/papers/lou-kdd12.pdf?spm=ata.21736010.0.0.12c05f3021OdTc&file=lou-kdd12.pdf)
