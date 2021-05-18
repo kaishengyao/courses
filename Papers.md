@@ -3,32 +3,27 @@
 This file contains papers that are interesting. 
 
 ## Interpretation
-1. https://arxiv.org/pdf/2103.12279.pdf 
-*Excellent paper* This paper introduces Local Interpretation Layer (LIL) and Global Interpretation Layer (GIL). LIL uses influence method to measure influence from particular non-terminal node of the parsed tree representation of the sentence. GIL uses sentence representation to retrieval the most relevant knowledge/phrase/sampels in training set. LIL and GIL help model performances without sacrificying interpretation capability.
-
-2. https://arxiv.org/pdf/1806.07538.pdf 
-This lays out a general design framework where interpretation can be achieved during model training with regularization that has interpretation concepts. 
-This is a *must* read paper. It is tested on simple image classification tasks. The concept can be applied on more complicated tasks such as natual language processing. 
-
-3. Ues generalized additive model 
+1. [Neural Additive Machine] (https://arxiv.org/pdf/2004.13912.pdf) uses deep neural network to extract prediction on each feature, and the prediction is the sum of each prediction. It has a unique activation function. 
+2. [Local Interpretation and Global Interpretation] (https://arxiv.org/pdf/2103.12279.pdf) This paper introduces Local Interpretation Layer (LIL) and Global Interpretation Layer (GIL). LIL uses influence method to measure influence from particular non-terminal node of the parsed tree representation of the sentence. GIL uses sentence representation to retrieval the most relevant knowledge/phrase/sampels in training set. LIL and GIL help model performances without sacrificying interpretation capability. I implemented but found the results are not good.
+3. https://arxiv.org/pdf/1806.07538.pdf This lays out a general design framework where interpretation can be achieved during model training with regularization that has interpretation concepts. This is a *must* read paper. It is tested on simple image classification tasks. The concept can be applied on more complicated tasks such as natual language processing. 
+4. Ues generalized additive model 
 (https://www.cs.cornell.edu/~yinlou/papers/lou-kdd12.pdf?spm=ata.21736010.0.0.12c05f3021OdTc&file=lou-kdd12.pdf)
 (https://www.cs.cornell.edu/~yinlou/papers/lou-kdd13.pdf?spm=ata.21736010.0.0.12c05f3021OdTc&file=lou-kdd13.pdf)
-
-4. Transformer interpretability 
+5. Transformer interpretability 
 https://arxiv.org/pdf/2012.09838.pdf This is a good paper to read for its coverage of existing approaches and its proposal. 
 
-5. Explainable Robots
+6. Explainable Robots
 https://arxiv.org/pdf/2105.02658.pdf This is a survey paper on explainable robots. I haven't yet read it thouroughly.
 
-6. Explainable machine learning for medicine
+7. Explainable machine learning for medicine
 https://arxiv.org/pdf/2105.02357.pdf haven't yet read it. 
 
-7. Debiasing https://assets.amazon.science/2a/60/aff3520f4d52bb195f4a674ae413/debiasing-concept-based-explanations-with-causal-analysis.pdf
+8. Debiasing https://assets.amazon.science/2a/60/aff3520f4d52bb195f4a674ae413/debiasing-concept-based-explanations-with-causal-analysis.pdf
 
-8. Piece Linear Neural Network (https://arxiv.org/pdf/1802.06259.pdf)
+9. Piece Linear Neural Network (https://arxiv.org/pdf/1802.06259.pdf)
 This method uses a softmax on top of many layers of linear network transformation of inputs. It claims to be exact and better than LIME. However, it best is considered to be linear classification network. LIME is for post-hoc explaination, and this PLNN is not. Also, the feature has been mixed up during PLNN forward computation. So I don't think this method will be inspiring.
 
-9. Interpretable model for ranking from [Google](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/5645c5bd211611898c776e21e83a7f2c0c381c85.pdf). 
+10. Interpretable model for ranking from [Google](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/5645c5bd211611898c776e21e83a7f2c0c381c85.pdf). 
 The method is solid. It is an intrisically interpretable model. The final model consists of individual neural networks for each feature of an item, and the final output is summation of scores from each of the feature as ![formula](https://render.githubusercontent.com/render/math?math=\hat{y}=\sum_j{f_j(x_j)}). If there are contextual features that are common to all feature items, the context feature contributes to the weight for each feature of an item as ![formula](https://render.githubusercontent.com/render/math?math=\hat{y}_i=\sum_{j=1}^n{w_j(q)f_j(x_{ij})}). The diagram is as ![Screen Shot 2021-05-15 at 9 43 52 AM](https://user-images.githubusercontent.com/3145135/118371581-10e81600-b562-11eb-917b-b338138f470f.png). More importantly, it proposes using piece-wise linear to approximate the neural network output, and call the final model as Distilled Neural Rankder Generalized Additive Model. 
 
 
