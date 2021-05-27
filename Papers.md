@@ -26,7 +26,9 @@ This method uses a softmax on top of many layers of linear network transformatio
 10. Interpretable model for ranking from [Google](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/5645c5bd211611898c776e21e83a7f2c0c381c85.pdf). 
 The method is solid. It is an intrisically interpretable model. The final model consists of individual neural networks for each feature of an item, and the final output is summation of scores from each of the feature as ![formula](https://render.githubusercontent.com/render/math?math=\hat{y}=\sum_j{f_j(x_j)}). If there are contextual features that are common to all feature items, the context feature contributes to the weight for each feature of an item as ![formula](https://render.githubusercontent.com/render/math?math=\hat{y}_i=\sum_{j=1}^n{w_j(q)f_j(x_{ij})}). The diagram is as ![Screen Shot 2021-05-15 at 9 43 52 AM](https://user-images.githubusercontent.com/3145135/118371581-10e81600-b562-11eb-917b-b338138f470f.png). More importantly, it proposes using piece-wise linear to approximate the neural network output, and call the final model as Distilled Neural Rankder Generalized Additive Model. 
 
-11. [Debiasing Concept-based Explanations with Causal Analysis](https://assets.amazon.science/2a/60/aff3520f4d52bb195f4a674ae413/debiasing-concept-based-explanations-with-causal-analysis.pdf) This is a paper needs to read multiple times. It proposes an extension of the graphical model to explain the relation from feature, to concept, and to the label. 
+11. [Concept Bottleneck Models](https://arxiv.org/pdf/2007.04612.pdf) 是一个通用的框架。特征必须通过概念（attribute）来解释，再到相对应的标签
+
+12. [Debiasing Concept-based Explanations with Causal Analysis](https://assets.amazon.science/2a/60/aff3520f4d52bb195f4a674ae413/debiasing-concept-based-explanations-with-causal-analysis.pdf) This is a paper needs to read multiple times. It proposes an extension of the graphical model to explain the relation from feature, to concept, and to the label. 
 
 
 
