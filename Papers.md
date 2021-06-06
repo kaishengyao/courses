@@ -55,6 +55,9 @@ The idea of PossibleWorldNet incorporates sampled words and use them to evaluate
 1. Tagging via Masked CRF https://arxiv.org/pdf/2103.10682.pdf
 This paper seems solve the illegal tagging problem in a fundamental yet simple way. It masks the illegal paths with a large negative score in both training and inference. 
 
+## Self-supervised Learning
+1. Yann Lecun's [blog](https://ai.facebook.com/blog/self-supervised-learning-the-dark-matter-of-intelligence/) emphasized importance of self-supervised learning, in which less transcription is an advantage of this approach. 
+
 ## Continual Learning
 ### Study on Multi-modal models
 1. This paper proposes a new dataset for the study of the continual learning on multi-modal systems. (https://arxiv.org/pdf/2005.00785.pdf)
@@ -90,12 +93,13 @@ This paper uses noisy-channel model, so that each component can be seperately pr
 1. Text classification and sentence-level classification model on server-less. However, the model is still too large with 200M byte. ( https://arxiv.org/pdf/2103.10673.pdf)
 
 
+## Reinforcement Learning
+1. [Reinforcement Learning as a Sequence Modeling Problem](https://arxiv.org/pdf/2106.02039.pdf) is an interesting paper. It essentially quantizes trajectory with each time sample quantized to a token that has a certain vocabulary. These tokens are then used similarly as those used with Transformer-type modeling. The output for reinforcement learning can be prediction of action. 
+2. [Decision Transformer](https://arxiv.org/abs/2106.01345) Can be any sequence model, and not necessarily a transformer. It has an input of expected reward and state. It outputs a prediction of the action that should achieve this reward. This paper is similar to the Upside Down RL from Schmidhubert. ![action prediction](https://latex.codecogs.com/svg.latex?a_t=\theta(\hat{R}_t,s_t)) The expected reward can be obtained from future data. It therefore constructs the following trajectory representation, which is amenable to autoregressive training and generation: ![trajectory](https://latex.codecogs.com/svg.latex?r=\left(\hat{R}_1,s_1,a_1,\hat{R}_2,s_2,a_2,\cdots,\hat{R}_T,S_T,a_T\right).), in which the reward is defined as ![reward](https://latex.codecogs.com/svg.latex?\hat{R}_k=\sum_{t=k}^Tr_k).
+
 ## Dataset
 
 1. GLUE dataset
 
 https://gluebenchmark.com/tasks
 
-## Reinforcement Learning
-1. [Reinforcement Learning as a Sequence Modeling Problem](https://arxiv.org/pdf/2106.02039.pdf) is an interesting paper. It essentially quantizes trajectory with each time sample quantized to a token that has a certain vocabulary. These tokens are then used similarly as those used with Transformer-type modeling. The output for reinforcement learning can be prediction of action. 
-2. [Decision Transformer](https://arxiv.org/abs/2106.01345) Can be any sequence model, and not necessarily a transformer. It has an input of expected reward and state. It outputs a prediction of the action that should achieve this reward. This paper is similar to the Upside Down RL from Schmidhubert. ![action prediction](https://latex.codecogs.com/svg.latex?a_t=\theta(\hat{R}_t,s_t)) The expected reward can be obtained from future data. It therefore constructs the following trajectory representation, which is amenable to autoregressive training and generation: ![trajectory](https://latex.codecogs.com/svg.latex?r=\left(\hat{R}_1,s_1,a_1,\hat{R}_2,s_2,a_2,\cdots,\hat{R}_T,S_T,a_T\right).), in which the reward is defined as ![reward](https://latex.codecogs.com/svg.latex?\hat{R}_k=\sum_{t=k}^Tr_k).
