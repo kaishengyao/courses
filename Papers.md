@@ -96,4 +96,5 @@ This paper uses noisy-channel model, so that each component can be seperately pr
 
 https://gluebenchmark.com/tasks
 
-
+## Reinforcement Learning
+1. [Reinforcement Learning as a Sequence Modeling Problem](https://arxiv.org/pdf/2106.02039.pdf) is an interesting paper. It essentially quantizes trajectory with each time sample quantized to a token that has a certain vocabulary. These tokens are then used similarly as those used with Transformer-type modeling. The output for reinforcement learning can be prediction of action. 
