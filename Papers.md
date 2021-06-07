@@ -56,7 +56,7 @@ The idea of PossibleWorldNet incorporates sampled words and use them to evaluate
 This paper seems solve the illegal tagging problem in a fundamental yet simple way. It masks the illegal paths with a large negative score in both training and inference. 
 
 ## Self-supervised Learning
-1. Yann Lecun's [blog](https://ai.facebook.com/blog/self-supervised-learning-the-dark-matter-of-intelligence/) emphasized importance of self-supervised learning, in which less transcription is an advantage of this approach. For vision, as there is no vocabulary, it is hard to associate reconstruction with certainty&dimension - CV has infinite uncertainty. Therefore, for CV, it proposes an energey based method of contrastive learning, which uses a scalar value to describe how x and y fit each other. For example, the energy function can be a L2 norm. 
+1. Yann Lecun's [blog](https://ai.facebook.com/blog/self-supervised-learning-the-dark-matter-of-intelligence/) emphasized importance of self-supervised learning, in which less transcription is an advantage of this approach. For vision, as there is no vocabulary, it is hard to associate reconstruction with certainty&dimension - CV has infinite uncertainty. Therefore, for CV, it proposes an energey based method of contrastive learning, which uses a scalar value to describe how x and y fit each other. For example, the energy function can be a L2 norm. It suggests an architecture of using regualarized latent variable to generate unlimited amount of perturbations of the original data, and then use contrastive method to learn a good representation of the original input. The representation will be used in downstream supervised learning tasks.
 
 ## Continual Learning
 ### Study on Multi-modal models
