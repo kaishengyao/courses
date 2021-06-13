@@ -45,6 +45,9 @@ Given the trie, it uses constrained beam-search, which is beam search constraine
 ![Screen Shot 2021-05-04 at 2 12 29 PM](https://user-images.githubusercontent.com/3145135/117070564-c4d7de80-ace2-11eb-9424-974bfde17028.png)
 
 
+## Modal architectures
+1. [Mlp-mixer](https://arxiv.org/abs/2105.01601) is a production-fiendly model that avoids quardratic computational cost of Transformer. It has mutiple layers of mixer. In each mixer, it rotates a "patch"-wise feature to extract channel-wise feature using an MLP, do rotation and use another MLP to mix the feature back to "patch" wise feature. 
+ 
 ## Logics and Entailment
 
 1. https://arxiv.org/pdf/1802.08535.pdf
