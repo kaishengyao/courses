@@ -46,7 +46,8 @@ Given the trie, it uses constrained beam-search, which is beam search constraine
 
 
 ## Modal architectures
-1. [Mlp-mixer](https://arxiv.org/abs/2105.01601) is a production-fiendly model that avoids quardratic computational cost of Transformer. It has mutiple layers of mixer. In each mixer, it rotates a "patch"-wise feature to extract channel-wise feature using an MLP, do rotation and use another MLP to mix the feature back to "patch" wise feature. 
+1. [Mlp-mixer](https://arxiv.org/abs/2105.01601) is a production-fiendly model that avoids quardratic computational cost of Transformer. It has mutiple layers of mixer. In each mixer, it rotates a "patch"-wise feature to extract channel-wise feature using an MLP, do rotation and use another MLP to mix the feature back to "patch" wise feature. ![Screen Shot 2021-06-13 at 11 42 00 AM](https://user-images.githubusercontent.com/3145135/121818669-700e7880-cc3d-11eb-93c9-7be42e88d793.png)
+
  
 ## Logics and Entailment
 
