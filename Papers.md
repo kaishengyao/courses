@@ -51,7 +51,7 @@ Given the trie, it uses constrained beam-search, which is beam search constraine
 ## Modal architectures
 1. [Mlp-mixer](https://arxiv.org/abs/2105.01601) is a production-fiendly model that avoids quardratic computational cost of Transformer. It has mutiple layers of mixer. In each mixer, it rotates a "patch"-wise feature to extract channel-wise feature using an MLP, do rotation and use another MLP to mix the feature back to "patch" wise feature. ![Screen Shot 2021-06-13 at 11 42 00 AM](https://user-images.githubusercontent.com/3145135/121818669-700e7880-cc3d-11eb-93c9-7be42e88d793.png)
 2. [Perceiver](https://arxiv.org/pdf/2103.03206.pdf) uses multiple units, with each unit consists of a cross-attention (Q from latent space, K and V are from inputs) to inputs and latent transformers (multiple layers) on the latent space feature. It also applied FFT on the inputs to encode positional information. This FFT can be 1-D for audio/language, 2-D for image, and 3-D for video. Compared to baseline Transformer, its computational cost maybe reduced because latent space dimension can be much smaller than the raw input. It doesn't have information such as through-put as the MLP mixer paper. I am skeptical its results. <img width="1086" alt="Screen Shot 2021-06-13 at 5 32 02 PM" src="https://user-images.githubusercontent.com/3145135/121826667-c85d6e80-cc6d-11eb-9ccd-e0333b03e58f.png">
-
+3. Supporting interpretable and robust models (https://arxiv.org/pdf/2102.07048.pdf) implies that the model needs to output prediction at each iteration and a risk score is a summation of all the predictions. 
 
  
 ## Logics and Entailment
