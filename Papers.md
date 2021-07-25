@@ -2,6 +2,9 @@
 
 This file contains papers that are interesting. 
 
+## Multi-modality
+1. A unified [vision and language model](https://arxiv.org/pdf/2102.02779.pdf) is proposed. Its [git directory](https://github.com/j-min/VL-T5) contains the model. The main idea is using text generation, following BART, to unify all vision and language tasks.
+
 ## Interpretation
 1. [Neural Additive Machine](https://arxiv.org/pdf/2004.13912.pdf) uses deep neural network to extract prediction on each feature, and the prediction is the sum of each prediction. It has a unique activation function. 
 2. [Local Interpretation and Global Interpretation](https://arxiv.org/pdf/2103.12279.pdf) This paper introduces Local Interpretation Layer (LIL) and Global Interpretation Layer (GIL). LIL uses influence method to measure influence from particular non-terminal node of the parsed tree representation of the sentence. GIL uses sentence representation to retrieval the most relevant knowledge/phrase/sampels in training set. LIL and GIL help model performances without sacrificying interpretation capability. I implemented but found the results are not good.
