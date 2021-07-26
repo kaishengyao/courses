@@ -40,7 +40,7 @@ The method is solid. It is an intrisically interpretable model. The final model 
 1. New pretrain idea that uses generation tasks for pretraining (https://arxiv.org/pdf/2103.10360.pdf)
 
 ## Accuracy and Efficiency Tradeoffs
-1. A [length-adaptive transformer](https://arxiv.org/pdf/2010.07003.pdf) is proposed, in which the length at each layer is learned from a teacher. 
+1. A [length-adaptive transformer](https://arxiv.org/pdf/2010.07003.pdf) is proposed, in which the length at each layer is learned from a teacher. It achieves better accuracy and also lower computational cost, usualy by half, compared to base Bert and distill Bert. 
 
 ## Entity Linking and Disabmbiguation
 1. This paper proposes a seq-to-seq method to do entity linking, with entities stored as prefix-tree (trie). 
