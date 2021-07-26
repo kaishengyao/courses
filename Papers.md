@@ -35,6 +35,8 @@ The method is solid. It is an intrisically interpretable model. The final model 
 13. [Leveraging Sparse Linear Layers for Debugging Deep Networks](https://arxiv.org/pdf/2105.04857.pdf) this paper proposes using elastic networks with a regularization path to select proper reguarlization with enough interpretability and accuracy. 
 14. [Identifiabile attention weights](https://arxiv.org/pdf/2106.01269.pdf) shows that an easy solution is to reduce the size of key vector and increase the length of the value vectors in attention.
 
+## Active Learning
+1. Dealing with noise or outlier in Active Learning is studied in the [paper](https://arxiv.org/pdf/2107.02331.pdf) and it suggests using a visualization tool that can show the group biasness of the data. 
 
 ## Pretrain
 1. New pretrain idea that uses generation tasks for pretraining (https://arxiv.org/pdf/2103.10360.pdf)
