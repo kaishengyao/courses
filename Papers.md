@@ -39,6 +39,9 @@ The method is solid. It is an intrisically interpretable model. The final model 
 ## Pretrain
 1. New pretrain idea that uses generation tasks for pretraining (https://arxiv.org/pdf/2103.10360.pdf)
 
+## Accuracy and Efficiency Tradeoffs
+1. A [length-adaptive transformer](https://arxiv.org/pdf/2010.07003.pdf) is proposed, in which the length at each layer is learned from a teacher. 
+
 ## Entity Linking and Disabmbiguation
 1. This paper proposes a seq-to-seq method to do entity linking, with entities stored as prefix-tree (trie). 
 Given the trie, it uses constrained beam-search, which is beam search constrained on the trie. (https://openreview.net/pdf?id=5k8F6UU39V)
