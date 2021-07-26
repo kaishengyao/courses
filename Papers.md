@@ -33,6 +33,7 @@ The method is solid. It is an intrisically interpretable model. The final model 
 
 12. [Debiasing Concept-based Explanations with Causal Analysis](https://assets.amazon.science/2a/60/aff3520f4d52bb195f4a674ae413/debiasing-concept-based-explanations-with-causal-analysis.pdf) This is a paper needs to read multiple times. It proposes an extension of the graphical model to explain the relation from feature, to concept, and to the label. 
 13. [Leveraging Sparse Linear Layers for Debugging Deep Networks](https://arxiv.org/pdf/2105.04857.pdf) this paper proposes using elastic networks with a regularization path to select proper reguarlization with enough interpretability and accuracy. 
+14. [Identifiabile attention weights](https://arxiv.org/pdf/2106.01269.pdf) shows that an easy solution is to reduce the size of key vector and increase the length of the value vectors in attention.
 
 
 ## Pretrain
