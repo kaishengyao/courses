@@ -2,6 +2,10 @@
 
 This file contains papers that are interesting. 
 
+## Speech & Language
+1. This [SUPERB](https://research.fb.com/wp-content/uploads/2021/08/SUPERB-Speech-Understanding-and-PERformance-Benchmark.pdf) describes pre-training & fine-tuning tasks for speech and downstream tasks such as ASR. The downstream tasks include ASR, speaker id, speaker verification, speaker diarization, emotion recognition, intent detection and slot filling. It shows a baseline setup and has the best performance on slot filling.
+
+
 ## Multi-modality
 1. A unified [vision and language model](https://arxiv.org/pdf/2102.02779.pdf) is proposed. Its [git directory](https://github.com/j-min/VL-T5) contains the model. The main idea is using text generation, following BART, to unify all vision and language tasks.
 
